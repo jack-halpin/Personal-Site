@@ -1,17 +1,57 @@
 *{
 	margin: 0;
 	padding: 0;
-	font-family: Helvetica;
+	font-family: "Roboto";
 }
 
 /*Styling for header*/
+.top-section{
+	background-color: #393f49;
+
+}
+
 
 header{
-	background-color: #005642;
+	padding-top: 40px;
+	
+	text-align: center;
+	height: auto;
+	
 }
 
 
 .centered-header-title{
+	padding: 10px;
+	font-size: 2em;
+}
+
+.centered-header-subtitle{
 	text-align: center;
-	color: white;
+}
+
+/*wrapper class*/
+.wrapper{
+	width: 940px;
+	margin: auto;
+}
+
+/*all navigation bar styling*/
+nav{
+	text-align: center;
+}
+nav ul{
+	padding-top: 10px;
+	list-style: none;
+}
+
+nav li{
+	display: inline-block;
+
+}
+nav a{
+	padding: 1em;
+}
+nav li:first-child{
+	display: inline-block;
+	
 }
