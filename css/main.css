@@ -6,36 +6,49 @@
 
 /*Styling for header*/
 .top-section{
-	background-color: lightblue;
-    height: 300px
+	background-color: #083D77;
+    height: auto;
 
+    padding-bottom: 40px;
 }
 
+
+a{
+   text-decoration: none;
+   color: black;
+}
 
 header{
-	padding-top: 10px;
 	text-align: center;
 	height: auto;
-	
 }
 
-
+.header-top-space{
+    
+} 
 .centered-header-title{
-    margin-top: 50px;
+    box-sizing: border-box;
 	padding: 10px;
 	font-size: 3em;
+    color: #ededed;;
 }
 
 .centered-header-subtitle{
 	text-align: center;
+    color: #ededed;
 }
 
 /*wrapper class*/
 .wrapper{
     margin: auto;
-	max-width: 960px;
+	max-width: 992px;
 }
 
+@media only screen and (max-width: 992px){
+    .wrapper{
+        max-width: ;
+    }
+}
 /*all navigation bar styling*/
 
 #header-name{
@@ -48,7 +61,7 @@ header{
 
 nav{
     text-align: right;
-    padding-top:20px;
+    padding: 20px;
 }
 
 nav ul{
@@ -62,6 +75,8 @@ nav li{
 }
 nav a{
 	padding: 1em;
+    font-size: 1.2em;
+    
 }
 nav li:first-child{
 	display: inline-block;
@@ -74,9 +89,77 @@ nav li:first-child{
     font-size: 36px;
     padding-bottom: 10px;
 }
-.content-about-me{
+.content-section{
+    margin: auto;
     text-align: center;
-    padding: 96px 32px 96px 32px;
+    padding: 64px 32px 64px 32px;
     font-size: 16px;
     height: auto;
+}
+
+
+.content-projects{
+    height: auto;
+}
+
+.section-paragraph-text{
+    font-size: 1.5em;
+}
+
+/*Stuff for the project section*/
+
+
+.project-image-section{
+    padding: 70px 20px 40px 20px;
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+}
+.project-image{
+    height: auto;
+    width: 80%;
+    box-sizing: border-box;  
+}
+
+
+.project-title{
+    color: #EE964B;
+}
+.project-text-content{
+    width: 50%;
+    float: left;
+    padding: 20px;
+    font-size: 1.2em;
+    box-sizing: border-box;  
+    text-align: left;
+}
+
+.gray-background{
+    background-color: #ededed;
+}
+
+.wrapper::after {
+    content:"";
+    display:block;
+    clear:both;
+}
+
+/*Buttons for project redirects*/
+
+.button-section{
+    margin: 12px;
+    box-sizing: border-box;
+}
+
+.project-redirect-button{
+    padding: 10px;
+    margin: 10px;
+    float: left;
+    background-color: red;
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+    height: auto;
+    width: 40%;
+    box-sizing: border-box;
 }
